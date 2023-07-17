@@ -1,0 +1,111 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "carId": "car1",
+      "stockStatus": true,
+      "hp": "500",
+      "price": "342344",
+      "colorId": 2
+    },
+    {
+      "id": 2,
+      "carId": "car2",
+      "stockStatus": false,
+      "hp": "550",
+      "price": "200000",
+      "colorId": 3
+    },
+    {
+      "id": 3,
+      "carId": "car3",
+      "stockStatus": false,
+      "hp": "200",
+      "price": "200000",
+      "colorId": 5
+    },
+    {
+      "id": 4,
+      "carId": "car4",
+      "stockStatus": true,
+      "hp": "195",
+      "price": "200000",
+      "colorId": 2
+    },
+    {
+      "id": 5,
+      "carId": "car5",
+      "stockStatus": true,
+      "hp": "150",
+      "price": "200000",
+      "colorId": 1
+    },
+    {
+      "id": 6,
+      "carId": "car6",
+      "stockStatus": true,
+      "hp": "150",
+      "price": "200000",
+      "colorId": 2
+    },
+    {
+      "id": 7,
+      "carId": "car7",
+      "stockStatus": false,
+      "hp": "444",
+      "price": "444444",
+      "colorId": 5
+    },
+    {
+      "id": 8,
+      "carId": "car8",
+      "stockStatus": true,
+      "hp": "150",
+      "price": "200000",
+      "colorId": 4
+    },
+    {
+      "id": 9,
+      "carId": "car9",
+      "stockStatus": true,
+      "hp": "150",
+      "price": "400000",
+      "colorId": 2
+    },
+    {
+      "id": 10,
+      "carId": "car10",
+      "stockStatus": false,
+      "hp": "150",
+      "price": "300000",
+      "colorId": 4
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "name": "red",
+      "code": "#C0392B"
+    },
+    {
+      "id": 2,
+      "name": "blue",
+      "code": "#3498DB"
+    },
+    {
+      "id": 3,
+      "name": "gray",
+      "code": "#7F8C8D"
+    },
+    {
+      "id": 4,
+      "name": "yellow",
+      "code": "#F4D03F"
+    },
+    {
+      "id": 5,
+      "name": "black",
+      "code": "#17202A"
+    }
+  ]
+}

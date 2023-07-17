@@ -1,0 +1,26 @@
+<div class="title">Car List</div>
+<div class="car-table">
+    <table id="cars">
+        <tr>
+            <th>Id</th>
+            <th>Car Id</th>
+            <th class="nowrap-column">Stock Status</th>
+            <th>HP</th>
+            <th>Price</th>
+            <th class="nowrap-column">Color</th>
+            <th class="nowrap-column">Edit</th>
+        </tr>
+        <tr *ngFor="let car of carData">
+            <td>{{car.id}}</td>
+            <td>{{car.carId}}</td>
+            <td><div *ngIf="car.stockStatus;then in_stock else out_of_stock"></div></td>
+            <td>{{car.hp}}</td>
+            <td>{{car.price | currency:'EUR'}}</td>
+            <td><color-box [colorId]="car.colorId"></color-box></td>
+            <td><button (click)="editCar(car.id)"><mat-icon>edit_note</mat-icon></button></td>
+        </tr>
+    </table>
+</div>
+
+<ng-template #in_stock><mat-icon style="color: rgb(30, 128, 0);">check_circle_outline</mat-icon></ng-template>
+<ng-template #out_of_stock><mat-icon style="color: rgb(155, 2, 2);">highlight_off</mat-icon></ng-template>

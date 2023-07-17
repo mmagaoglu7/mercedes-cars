@@ -1,0 +1,30 @@
+<div class="title">Car Information</div>
+<form [formGroup]='carForm' class="form" (submit)="saveChanges(carForm)">
+
+    <label for="id">Id:</label>
+    <input id="id" formControlName='id' type="text" class="form-control" />
+
+    <label for="carId">Car Id:</label>
+    <input id="carId" formControlName='carId' type="text" class="form-control" />
+
+    <label for="hp">HP:</label>
+    <input id="hp" formControlName='hp' type="text" class="form-control" required/>
+
+    <label for="price">Price:</label>
+    <input id="price" formControlName='price' type="text" class="form-control" [value]="carForm.value.price | number:'1.2-2'" required/>
+
+    <div class="checkbox-container">
+        <label for="stockStatus">Stock Status:</label>
+        <input id="stockStatus" formControlName='stockStatus' type="checkbox" class="form-control" />
+    </div>
+    <div class="color-container">
+        <label *ngFor="let color of colorData">
+            <input type="radio" [value]="color.id" formControlName="colorId">
+            <span>{{color.name}}<color-box [colorId]="color.id"></color-box></span>
+        </label>
+    </div>
+    <div class="button-container">
+        <button class="cancel-button" (click)="cancel()">Cancel</button>
+        <button type="submit" class="save-button">Save</button>
+    </div>
+</form>

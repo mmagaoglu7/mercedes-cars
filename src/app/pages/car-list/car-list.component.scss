@@ -1,0 +1,40 @@
+$header-footer-color: rgb(221, 221, 221);
+
+.title{
+    margin: 20px 50px;
+    font-size: x-large;
+}
+.car-table {
+    margin: 20px 50px;
+
+    #cars {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #cars td,
+    #customers th {
+        border: 1px solid #bebebe;
+        padding: 8px;
+    }
+
+    #cars tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #cars tr:hover {
+        background-color: #d1d1d1;
+    }
+
+    #cars th {
+        padding: 12px 5px;
+        text-align: left;
+        background-color: rgb(0, 0, 0);
+        color: $header-footer-color;
+    }
+    .nowrap-column{
+        width: 1%;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,64 @@
+
+.title{
+    width: 65%;
+    margin: 20px;
+    font-size: x-large;
+    text-align: center;
+}
+input[type=text],
+input[type=number] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    width: 40%;
+    margin: auto;
+}
+
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.color-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    label{
+        padding-left: 10px;
+    }
+}
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px;
+    button{
+        width: 48%;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    .cancel-button{
+        border: 2px solid rgb(155, 2, 2);
+    }
+    .save-button{
+        border: 2px solid rgb(30, 128, 0);
+    }
+}
